@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Details in Fabrics</title>
+</head>
+
+<body app-theme="light">
+    <header id="tm-app-header">
+        <span id="tm-app-name">Fabrics and Details</span>
+        <div id="tm-app-header__right-block">
+            <div class="user-info">
+                <img src="./images/user_img.png" alt="User avatar" class="user-info__avatar" />
+                <span class="user-info__username"><a href="https://youtu.be/ITXVIK8KZuI?si=fanO9-L9oEQyqZqB">Fabrics Diteil'овна</a></span>
+            </div>
+        </div>
+    </header>
+    <div class="date-container">
+        <label for="current-date">Текущая дата:</label>
+        <input type="date" id="current-date" disabled>
+        <button id="next-day-btn">Следующий день</button>
+    </div>
+    <main id="tm-app-base">
+      <ul class="tasklists-list">
+            <li class="tasklist">
+                <button id="add-tasklist-btn">Добавить заказ</button>
+                <form id="add-order-form" style="display: none;">
+                    <label for="order-customer">ФИО:</label>
+                    <input type="text" id="order-customer" required>
+                    <label for="order-date">Дата заказа:</label>
+                    <input type="date" id="order-date" required>
+                    <button type="submit">Сохранить заказ</button>
+                </form>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
